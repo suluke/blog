@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Palm base -->
+  <rect x="28" y="42" width="44" height="42" rx="10" fill="#FFCC66"/>
+
+  <!-- Thumb -->
+  <rect x="16" y="48" width="16" height="26" rx="8" fill="#FFCC66"/>
+
+  <!-- Index finger -->
+  <rect x="30" y="18" width="13" height="34" rx="6.5" fill="#FFCC66"/>
+
+  <!-- Middle finger -->
+  <rect x="45" y="14" width="13" height="36" rx="6.5" fill="#FFCC66"/>
+
+  <!-- Ring finger -->
+  <rect x="60" y="18" width="12" height="33" rx="6" fill="#FFCC66"/>
+
+  <!-- Pinky finger -->
+  <rect x="73" y="26" width="11" height="28" rx="5.5" fill="#FFCC66"/>
+
+  <!-- Knuckle highlights -->
+  <ellipse cx="36" cy="34" rx="4" ry="2.5" fill="#F0B040" opacity="0.5"/>
+  <ellipse cx="51" cy="30" rx="4" ry="2.5" fill="#F0B040" opacity="0.5"/>
+  <ellipse cx="66" cy="34" rx="4" ry="2.5" fill="#F0B040" opacity="0.5"/>
+
+  <!-- Motion lines -->
+  <line x1="6" y1="25" x2="18" y2="28" stroke="#FFCC66" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="4" y1="38" x2="16" y2="38" stroke="#FFCC66" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <line x1="8" y1="50" x2="18" y2="47" stroke="#FFCC66" stroke-width="3" stroke-linecap="round" opacity="0.35"/>
+</svg>
