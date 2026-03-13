@@ -6,8 +6,6 @@ description: 'My first post on this blog.'
 tags: ['everyday', 'mundane', 'ordinary', 'contemporary']
 ---
 
-# The Times They Are a-Changin'
-
 It is early March 2026.
 The war between the USA and Iran is still "fresh".
 Everyone is affected by explosions, by which I mean the explosions of prices at the gas stations.
