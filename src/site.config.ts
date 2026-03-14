@@ -153,6 +153,7 @@ const config: SiteConfig = {
   socialLinks: {
     github: 'https://github.com/suluke',
     // mastodon: 'https://github.com/stelcodes/multiterm-astro',
+    pixelfed: 'https://pixelfed.social/lksbhm',
     // email: 'https://github.com/stelcodes/multiterm-astro',
     linkedin: 'https://www.linkedin.com/in/lksbhm/',
     bluesky: 'https://bsky.app/profile/lksbhm.bsky.social',

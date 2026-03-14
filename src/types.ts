@@ -150,6 +150,7 @@ export type SocialLinks = {
   github?: string
   twitter?: string
   mastodon?: string
+  pixelfed?: string
   bluesky?: string
   linkedin?: string
   email?: string

@@ -2,6 +2,7 @@
 import type { SocialLinks } from '~/types'
 import IconGithub from '~/icons/github.svg'
 import IconMastodon from '~/icons/mastodon.svg'
+import IconPixelfed from '~/icons/pixelfed.svg'
 import IconTwitter from '~/icons/twitter.svg'
 import IconLinkedin from '~/icons/linkedin.svg'
 import IconBluesky from '~/icons/bluesky.svg'
@@ -39,6 +40,18 @@ const { socialLinks } = Astro.props
       >
         <span class="sr-only">Mastodon</span>
         <IconMastodon class="size-7" />
+      </a>
+    )
+  }{
+    socialLinks.pixelfed && (
+      <a
+        href={socialLinks.pixelfed}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link"
+      >
+        <span class="sr-only">Pixelfed</span>
+        <IconPixelfed class="size-7" />
       </a>
     )
   }
