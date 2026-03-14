@@ -33,3 +33,5 @@ If you are setting up a team with a name that falls into this category, I implor
 As a simple fix, consider suffixing these team names with "Tooling" to bring it back into "named after a product" land.
 
 Personally, I will take my own advice here and try from now on to make sure I do not end up in cross-functional teams any more.
+FWIW, the German version of "Toss Everything At Me" is "Toll Ein Anderer Macht's".
+This translates to "Great Another One Doesit".
