@@ -27,7 +27,7 @@ Maybe the environment was unusual.
 The office/bakery building is located in a slightly posh business & living area.
 In German, one would describe it as "links-grün versifft" (green-left-wing-filthy) yet gentrified.
 There is of course nothing bad to be said about the driver of this car.
-As I recall it it was of German make and model.
+As I recall it, it was of German make and model.
 And literally _everybody_ knows that pulling the key for just a brief stop is bad for your Diesel engine.
 Still I can't shed the feeling somehow that this event felt like it has fallen out time.
 I for one am happy that electric cars are making the tough choice between engine longevity and burning gas for no reason a thing of the past.

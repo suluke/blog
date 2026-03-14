@@ -7,8 +7,8 @@ tags: ['company', 'work', 'job']
 ---
 
 I think it is generally true that teams in companies are named after the thing they are expected to deliver.
-In the ideal case, that is simply a product name.
-If is the case, the goal definition is pretty much clear:
+Ideally, that is simply a product name.
+If this is the case, the goal definition is pretty much clear:
 The team delivers and maintains said product.
 As long as the product has users, chances are that it is not being discontinued.
 Success metrics are clear and measurable and will include e.g. user retention, user adoption, user satisfaction etc.
@@ -20,11 +20,11 @@ But overall I would argue that it's mostly about making the decision which produ
 After allocating resources appropriately things should in theory be comparable in lifestyle to the team named after the product.
 At the end of the day, it should be clear what falls inside or outside any given area, and areas in a company should have no overlap.
 Context switching will be a thing for the team members, though, with larger distances between the topics being the norm.
-For this reason, I would be somewhat sceptical of such a team setup, as it inherintly signals a lack of focus.
+For this reason, I would be somewhat skeptical of such a team setup, as it inherently signals a lack of focus.
 
 And then there are the so-called "cross-functional" teams.
 Usually, they get named after dimensions of the software engineering process.
-In other words, aspects of software that are usually desireable in any software product.
+In other words, aspects of software that are generally desirable in any software product.
 Concrete examples that would come to mind could be "QA", "Observability", "Performance", "Analytics"...
 A mistake I have seen people making when they come across a team named after a certain aspect is that they believe they can out-source all the work in that _perceived_ area to this team.
 "We have a performance team, so it's their responsibility to solve performance in the application _I_ have built".
