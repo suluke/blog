@@ -52,7 +52,7 @@ Or maybe her head was occupied with other things at that particular moment.
 
 This was not the first time I wasn't happy with my reaction in hind-sight.
 Another (female) vacation acquaintance of mine had her account hacked some months earlier.
-For a period of time (2 days or so) her account would suddenly promote some crypto broker or currency or get-rich-quick theme or whatever.
+For a period of time (2 days or so) her account would suddenly promote some crypto broker or currency or get-rich-quick scheme or whatever.
 And here also my first reaction was to roll my eyes about her trying to make some extra money at the expense of others.
 I do think all things crypto are a scam.
 But it didn't occur to me that she might have been hacked.
