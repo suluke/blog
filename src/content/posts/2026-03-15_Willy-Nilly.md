@@ -80,9 +80,25 @@ This value, short for "not a number", is another value that the type system reco
 Another uninvited guest to our party.
 But, in large parts contrary to our previous acquaintance `undefined`, Mr. `NaN` comes with bad manners, too!
 Somebody decided that it is the reasonable thing to make `NaN === NaN` evaluate to `false`.
-Also, `0 * NaN` is still `NaN`.
+Also, `0 * NaN` is still `NaN`, as is `NaN / 0`.
+On the other hand, `1 / 0` is defined to return `Infinity`.
 
-What are the alternatives, though?
+What is remarkable here is that even the rust people couldn't get this right.
+Not because they didn't want to.
+The reason why they had to include the `NaN`-madness in their language as well for the `f32`/`f64` types is simply that every processor in the world that is remotely modern and relevant is using the IEEE754 standard for floating-point arithmetic.
+And this specification unfortunately makes it so that we have all these ugly [special values](https://en.wikipedia.org/wiki/IEEE_754#Special_values) manifested into hardware for all eternity.
+So, on this front, I'm afraid to say humanity has lost.
+
+Just like it has with `NULL` in the SQL standard.
+To date probably the largest-scale attempt to embed [Three-Valued Logic](https://en.wikipedia.org/wiki/Three-valued_logic) into a programming system.
+And everyone hates it.
+I once proposed a tabular compute language where `NULL` would be treated at least so that it is equal to itself, making use of the ugly but useful `IS NOT DISTINCT FROM` construct.
+But a dear colleague pointed out to me (to great dismay on my end) that postgres cannot create indexes on that, dooming any join to be a slow nested-loop join.
+Concrete sources that would prove my claims here on this are sparse.
+I could only find this post on [StackOverflow](https://stackoverflow.com/questions/40830940/postgresql-poor-performance-in-left-join-is-not-distinct-from).
+I also remember having read the [nabble post linked](https://postgresql.nabble.com/How-to-hint-2-coulms-IS-NOT-DISTINCT-FROM-each-other-td5928175.html) from there which since seems to have died and isn't available on archive.org either.
+
+What are the alternatives to having special values added to all types, though?
 How should we let a caller know when an operation did not produce a (meaningful) value?
 The answer is [sum types](https://en.wikipedia.org/wiki/Tagged_union).
 In Typescript, with [strict null checks](https://www.typescriptlang.org/tsconfig/#strictNullChecks) enabled, the following is a perfect way let callers know about the possibility of absence of a return value:
@@ -91,4 +107,5 @@ In Typescript, with [strict null checks](https://www.typescriptlang.org/tsconfig
 findIndex(n: number, ns: readonly number[]): number | undefined { /* ... */ }
 ```
 
-<!-- - Not only a value you didn't explicitly invite, but also coming with crude manners: `NaN` in IEEE754, `NULL` in SQL -->
+In rust, we have the `Option` type, which can come in the flavors `Some(value)` or `None`.
+C++ gives us `std::expected`.
