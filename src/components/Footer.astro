@@ -1,6 +1,7 @@
 ---
 import siteConfig from '~/site.config'
 import SocialLinks from '~/components/SocialLinks.astro'
+import NavLink from './NavLink.astro'
 ---
 
 <footer
@@ -11,6 +12,8 @@ import SocialLinks from '~/components/SocialLinks.astro'
     <span class="my-1">
       {siteConfig.author} © {new Date().getFullYear()}
     </span>
+    <span class="mx-5 hidden md:block"> :: </span>
+    <NavLink link={{ url: '/imprint', name: 'Impressum' }} />
     <span class="mx-5 hidden md:block"> :: </span>
     <span class="my-1">
       Powered by <a
