@@ -170,7 +170,7 @@ const config: SiteConfig = {
     repo: 'suluke/blog',
     repoId: 'R_kgDORisKrQ',
     category: 'Giscus',
-    categoryId: 'DIC_kwDORisKrc4C4ot',
+    categoryId: 'DIC_kwDORisKrc4C4ot-',
     reactionsEnabled: true, // Enable reactions on post itself
   },
   // These are characters available for the character chat feature.
