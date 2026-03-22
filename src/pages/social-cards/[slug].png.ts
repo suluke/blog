@@ -7,6 +7,8 @@ import { dateString, getSortedPosts, resolveThemeColorStyles } from '~/utils'
 import path from 'path'
 import fs from 'fs'
 import type { ReactNode } from 'react'
+import { Readable } from 'stream'
+import sharp from 'sharp'
 
 // Load the font file as binary data
 const fontPath = path.resolve(
@@ -23,6 +25,10 @@ if (
     path.extname(avatarPath).toLowerCase() === '.jpeg')
 ) {
   avatarData = fs.readFileSync(avatarPath)
+  avatarData = await sharp(avatarPath)
+    .resize(150, 150)
+    .jpeg({ quality: 80 })
+    .toBuffer()
   avatarBase64 = `data:image/jpeg;base64,${avatarData.toString('base64')}`
 }
 
@@ -60,13 +66,12 @@ const ogOptions: SatoriOptions = {
 const markup = (title: string, pubDate: string | undefined, author: string) =>
   html(`<div tw="flex flex-col max-w-full justify-center h-full bg-[${bg}] text-[${fg}] p-12">
     <div style="border-width: 12px; border-radius: 80px;" tw="flex items-center max-w-full p-8 border-[${accent}]/30">
-      ${
-        avatarBase64
-          ? `<div tw="flex flex-col justify-center items-center w-1/3 h-100">
+      ${avatarBase64
+      ? `<div tw="flex flex-col justify-center items-center w-1/3 h-100">
             <img src="${avatarBase64}" tw="flex w-full rounded-full border-[${accent}]/30" />
         </div>`
-          : ''
-      }
+      : ''
+    }
       <div tw="flex flex-1 flex-col max-w-full justify-center items-center">
         ${pubDate ? `<p tw="text-3xl max-w-full text-[${accent}]">${pubDate}</p>` : ''}
         <h1 tw="text-6xl my-14 text-center leading-snug">${title}</h1>
@@ -81,7 +86,9 @@ export async function GET(context: APIContext) {
   const { pubDate, title, author } = context.props as Props
   const svg = await satori(markup(title, pubDate, author) as ReactNode, ogOptions)
   const png = new Resvg(svg).render().asPng()
-  return new Response(png, {
+
+  const rs = Readable.toWeb(Readable.from(png)) as ReadableStream;
+  return new Response(rs, {
     headers: {
       'Cache-Control': 'public, max-age=31536000, immutable',
       'Content-Type': 'image/png',
