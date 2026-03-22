@@ -45,6 +45,7 @@ Because on the other hand I see
 - not having to be anywhere specific on that particular Sunday
 - not having to wait in line
 - having all the time in the world to fill out the ballot at home, rather than blocking a cabin
+- if you die between sending in your ballot and election day, it still counts!
 
 These arguments in my view more than make up for the downsides.
 Am I missing something?
