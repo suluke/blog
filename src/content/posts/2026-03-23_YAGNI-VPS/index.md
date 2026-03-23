@@ -2,7 +2,7 @@
 title: "VPS YAGNI"
 published: 2026-03-23
 draft: false
-description: '.'
+description: 'How I narrowly escaped from cloud-native microservices on Kubernetes clusters with serverless functions intertwined with sprawling CI/CD pipelines'
 tags: ['software', 'tech']
 ---
 
