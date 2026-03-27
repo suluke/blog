@@ -49,7 +49,7 @@ const config: SiteConfig = {
   // The theming configuration for the site.
   themes: {
     // The theming mode. One of "single" | "select" | "light-dark-auto".
-    mode: 'single',
+    mode: 'light-dark-auto',
     // The default theme identifier, used when themeMode is "select" or "light-dark-auto".
     // Make sure this is one of the themes listed in `themes` or "auto" for "light-dark-auto" mode.
     default: 'kanagawa-lotus',
@@ -116,7 +116,7 @@ const config: SiteConfig = {
       // 'snazzy-light',
       // 'solarized-dark',
       // 'solarized-light',
-      // 'synthwave-84',
+      'synthwave-84',
       // 'tokyo-night',
       // 'vesper',
       // 'vitesse-black',
